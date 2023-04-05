@@ -1,7 +1,7 @@
 import { Image, View, Text, StyleSheet, Dimensions } from "react-native";
-import { ACCENT_COLOR, NEUTRAL_COLOR } from "../constants/colors";
 import { Ionicons } from "@expo/vector-icons";
-import { toRupiah } from "../libs/textFunction";
+import { toRupiah } from "../utils/helpers/textHelper";
+import { ACCENT_COLOR, NEUTRAL_COLOR } from "../utils/constants/colors";
 
 const { width } = Dimensions.get("window");
 

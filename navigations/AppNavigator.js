@@ -39,7 +39,7 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {/* <Stack.Screen name="Tab" component={Tab} /> */}
+        <Stack.Screen name="Tab" component={Tab} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Signup" component={RegisterScreen} />
       </Stack.Navigator>

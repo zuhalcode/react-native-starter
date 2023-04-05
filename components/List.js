@@ -1,13 +1,13 @@
 import { Image } from "react-native";
+
+import { View, Text, Dimensions, StyleSheet } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
 import {
-  ACCENT_COLOR,
   NEUTRAL_COLOR,
   PRIMARY_COLOR,
   SECONDARY_COLOR,
-} from "../constants/colors";
-import { View, Text, Dimensions, StyleSheet } from "react-native";
-import { toRupiah } from "../libs/textFunction";
-import { MaterialIcons } from "@expo/vector-icons";
+} from "../utils/constants/colors";
+import { toRupiah } from "../utils/helpers/textHelper";
 
 const { width } = Dimensions.get("window");
 
@@ -21,11 +21,7 @@ const List = ({ product }) => {
         resizeMode="contain"
         style={{ width: 80, height: 80, borderRadius: 100 }}
       />
-      <View
-        style={{
-          gap: 5,
-        }}
-      >
+      <View style={{ gap: 5 }}>
         <View
           style={{
             flexDirection: "row",
@@ -40,7 +36,7 @@ const List = ({ product }) => {
           <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
         </View>
         <Text
-          style={{ color: SECONDARY_COLOR, fontWeight: "bold", fontSize: 15 }}
+          style={{ color: PRIMARY_COLOR, fontWeight: "bold", fontSize: 15 }}
         >
           No.1 in Sales
         </Text>
